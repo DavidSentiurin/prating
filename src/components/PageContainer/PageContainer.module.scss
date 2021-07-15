@@ -1,0 +1,23 @@
+@use '../../varibles' as *;
+
+.container {
+  padding: $container-padding;
+  margin: 0 auto;
+  max-width: 1310px;
+  padding-bottom: 30px;
+
+  &-content {
+    padding-top: 26px;
+  
+    &-title {
+      margin-bottom: 12px;
+
+      h1 {
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 33px;
+        color: $color-purple;
+      }
+    }
+  }
+}

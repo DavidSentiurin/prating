@@ -1,0 +1,52 @@
+@use '../../../varibles' as *;
+
+.rating_to_vote {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 21px;
+
+  &-item {
+    &-star_icon {
+      background: url(../../../images/no_fill_star.svg) center center no-repeat;
+      min-width: 20px;
+      width: 20px;
+      max-width: 20px;
+      min-height: 20px;
+      height: 20px;
+      max-height: 20px;
+      cursor: pointer;
+
+      &.selected {
+        background: url(../../../images/fill_star.svg) center center no-repeat;
+      }
+
+      &.hover {
+        background: url(../../../images/fill_star.svg) center center no-repeat;
+        opacity: .4;
+      }
+    }
+
+    input {
+      position: absolute;
+      opacity: 0;
+    }
+  }
+
+  &-number {
+    color: $color-purple;
+    user-select: none;
+    margin-left: 20px;
+
+    &-selected {
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 21px;
+    }
+
+    &-max_rating {
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 14px;
+    }
+  }
+}

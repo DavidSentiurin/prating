@@ -1,0 +1,26 @@
+@use '../../../varibles' as *;
+
+main {
+  height: 100%;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: $container-padding;
+}
+
+.logo-first-color-part {
+  color: $color-accent;
+}
+
+.logo-second-color-part {
+  color: $color-purple;
+}
+
+.logo-third-color-part {
+  color: $color-accent-secondary;
+}
+

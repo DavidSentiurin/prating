@@ -1,0 +1,45 @@
+@use '../../../varibles' as *;
+
+.form {
+  max-width: 360px;
+  width: 360px;
+  margin: auto;
+
+  &-header {
+    text-align: center;
+    color: $color-purple;
+
+    &-title {
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 21px;
+      margin-bottom: 21px;
+    }
+
+    &-subtitle {
+      font-weight: bold;
+      font-size: 28px;
+      line-height: 33px;
+      margin-bottom: 24px;
+    }
+  }
+
+  &-body {
+    &-password, &-username {
+      margin-bottom: 9px;
+    }
+
+    &-button {
+      margin-bottom: 10px;
+    }
+  }
+
+  &-error {
+    text-align: center;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: $color-red;
+    min-height: 16px;
+  }
+}

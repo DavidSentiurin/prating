@@ -1,0 +1,33 @@
+@use '../../../varibles' as *;
+
+.review {
+  box-shadow: $content-box-shodow;
+  border: $content-border;
+  border-radius: $border-radius-large;
+  padding: 15px;
+
+  &.own_review {
+    border-color: $color-accent;
+  }
+
+  &-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+
+    &-title {
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 21px;
+    }
+  }
+
+  &-fotter {
+    color: $color-black;
+    opacity: .6;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+  }
+}

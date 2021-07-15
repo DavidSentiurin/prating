@@ -1,0 +1,36 @@
+.rating {
+  display: flex;
+  align-items: center;
+
+  &-icons {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 10px;
+
+    &-item {
+      margin: 0 2.5px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &-numbers {
+    &-current {
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 16px;
+    }
+
+    &-max {
+      font-weight: normal;
+      font-size: 10px;
+      line-height: 12px;
+    }
+  }
+}

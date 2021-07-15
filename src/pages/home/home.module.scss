@@ -1,0 +1,41 @@
+@use '../../varibles' as *;
+
+main {
+  position: relative;
+}
+.home {
+  &-content {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 24px;
+    gap: 24px;
+    word-break: break-word;    
+
+    @media (max-width: 1220px) {
+      grid-template-columns: repeat(3,1fr);
+    }
+
+    @media (max-width: 920px) {
+      grid-template-columns: repeat(2,1fr);
+    }
+
+    @media (max-width: 600px) {
+      grid-template-columns: repeat(1,1fr);
+    }
+  }
+
+  &-loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    svg {
+      width: 10vw;
+
+      @media (max-width: 600px) {
+        width: 15vw;
+      }
+    }
+  }
+}

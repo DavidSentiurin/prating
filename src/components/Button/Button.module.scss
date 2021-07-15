@@ -1,0 +1,41 @@
+@use '../../varibles' as *;
+
+.button {
+  width: 100%;
+  border: 0;
+  padding: 11px 20px;
+  border-radius: $border-radius-medium;
+  cursor: pointer;
+  opacity: 1;
+  transition: opacity ease $transition-animation-time;
+
+  &.accent {
+    background-color: $color-purple;
+    color: $color-white;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  &.ghost {
+    border: 1px solid $color-purple;
+    background-color: $color-white;
+    color: $color-purple;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  &:disabled {
+    opacity: .6;
+    cursor: no-drop;
+
+    &:hover {
+      opacity: .6;
+    }
+  }
+
+  &:hover {
+    opacity: .8;
+  }
+}

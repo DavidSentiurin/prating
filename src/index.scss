@@ -1,0 +1,35 @@
+@use './reset.scss';
+@use './fonts.scss';
+
+* {
+  box-sizing: border-box;
+}
+
+#root {
+  height: 100vh; /* Use vh as a fallback for browsers that do not support Custom Properties */
+  height: calc(var(--vh, 1vh) * 100);
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+  font: 16px/1 'Roboto';
+}
+
+input {
+  outline: none;
+}
+
+a {
+  border: 0; 
+  text-decoration: none; 
+  outline: none;
+  user-select: none;
+}
+
+a:active, a:focus {
+  border: none;
+  -moz-outline-style: none;
+  -webkit-tap-highlight-color: transparent!important;
+  outline: none!important;
+}

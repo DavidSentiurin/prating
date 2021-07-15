@@ -1,0 +1,6 @@
+{
+  "apiURL": "http://smktesting.herokuapp.com",
+  "rating": {
+    "maxValue": 5
+  }
+}

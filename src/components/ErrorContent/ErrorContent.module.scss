@@ -1,0 +1,43 @@
+@use '../../varibles' as *;
+
+main {
+  position: relative;
+}
+
+.error-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 280px;
+  border-radius: $border-radius-large;
+  box-shadow: $content-box-shodow;
+  border: $content-border;
+  padding: 15px;
+
+  &-img {
+    max-width: 120px;
+    margin: 10px 0 20px;
+
+    svg {
+      width: 10vw;
+      height: 10vw;
+
+      path {
+        fill: $color-red;
+      }
+    }
+  }
+
+  &-message {
+    text-align: center;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    color: $color-red;
+  }
+}

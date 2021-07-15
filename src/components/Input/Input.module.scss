@@ -1,0 +1,48 @@
+@use '../../varibles' as *;
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  width: 100%;
+  border-radius: $border-radius-medium;
+  border: 1px solid $color-purple;
+  padding: 12px 14px;
+  background-color: #F7F5F5;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: $color-purple;
+  transition: border ease $transition-animation-time;
+
+  &:disabled {
+    opacity: .6;
+    cursor: no-drop;
+  }
+
+  &:focus {
+    border: 1px solid $color-accent-secondary;
+  }
+
+  &::placeholder {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: rgba(0, 0, 0, 0.2);
+  }
+
+  &.error {
+    border: 1px solid $color-red;
+  }
+
+  &-error-message {
+    min-height: 16px;
+    color: $color-red;
+    margin-top: 5px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+  }
+}

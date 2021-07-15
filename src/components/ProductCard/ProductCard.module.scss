@@ -1,0 +1,70 @@
+@use '../../varibles' as *;
+
+.card {
+  min-width: 240px;
+  display: flex;
+  flex-direction: column;
+  border-radius: $border-radius-large;
+  box-shadow: $content-box-shodow;
+  border: $content-border;
+  word-break: break-word;
+
+  &-image {
+    max-height: 300px;
+    height: 300px;
+    min-height: 300px;
+    
+
+    &-item {
+      border-radius: $border-radius-large $border-radius-large 0 0;
+    }
+  }
+
+  &-line {
+    background-color: $color-accent-secondary;
+    height: 5px;
+    width: 100%;
+  }
+
+  &-content {
+    padding: $container-padding;
+    margin: 15px 0;
+
+    &-title {
+      margin-bottom: 10px;
+
+      h2 {
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 23px;
+        color: $color-purple;
+      }
+    }
+  
+    &-body {
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 16px;
+      color: $color-black;
+      opacity: .6;
+      margin-bottom: 25px;
+    }
+
+    &-footer {
+
+      &-link {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+        color: $color-purple;
+        padding: 10px 0px;
+        opacity: 1;
+        transition: opacity ease $transition-animation-time;
+
+        &:hover {
+          opacity: .6;
+        }
+      }
+    }
+  }
+}
